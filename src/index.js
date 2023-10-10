@@ -3,27 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Car from "./components/Car";
-import Garage_1 from "./components/Garage_1";
 
 
-function Garage() {
-  return (
-    <>    
-      <h2>Get into the garage</h2>
-      <Car />
-      
-    </>
-  );
-}
+
+
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <Garage />
-    <Garage_1 />
+  
+ 
   </React.StrictMode>
 );
 
