@@ -64,6 +64,11 @@ function Todo() {
 
         setTodoList(newlist);
     }
+    function clearCheckedData(index) {
+        const newlist = checkedlist.filter((item, i) => { return (i != index) })
+
+        setCheckedlist(newlist);
+    }
 
     return (
         <div >
@@ -92,7 +97,7 @@ function Todo() {
                             <>
 
                                 <li key={index} style={{ textDecoration: 'line-through' }}>
-                                    <input type="checkbox" onClick={(event) => nolinethrough(index, event)} checked />{checked}<button onClick={(e) => clearData(index)}>-</button></li>
+                                    <input type="checkbox" onClick={(event) => nolinethrough(index, event)} checked />{checked}<button onClick={(e) => clearCheckedData(index)}>-</button></li>
 
                             </>
 

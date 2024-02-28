@@ -5,9 +5,10 @@ import {Routes,Route,BrowserRouter,Link} from "react-router-dom";
 
 
 // import Home2 from "./components/Home2";
-import Contact from "./components/Contactus";
+// import Contact from "./components/Contactus";
 import Todo from "./components/Todo"
 import Reacthook from "./components/ReactHook";
+import Axios from "./components/axios/axios";
 
 
 
@@ -57,12 +58,16 @@ function App() {
             <li>
                 <Link to="/todo">Todo list</Link>
             </li>
+            <li>
+                <Link to="/axios">Axios</Link>
+            </li>
             </ul>
         <Routes>
                
                 <Route exact path='/reacthook' element={<Reacthook />}></Route>
-                <Route exact path='/contact' element={<Contact />}></Route>
+                {/* <Route exact path='/contact' element={<Contact />}></Route> */}
                 <Route exact path='/todo' element={<Todo />}></Route>
+                <Route exact path='/axios' element={<Axios />}></Route>
         </Routes>
         </div>
     </BrowserRouter>
